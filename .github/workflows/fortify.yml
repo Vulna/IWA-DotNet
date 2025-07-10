@@ -53,6 +53,7 @@ jobs:
           debricked-sca-scan: true
         env:
           SSC_URL: http://3.70.235.198:8080/ssc
+          SSC_API_URL: http://3.70.235.198:8080/ssc/api
           SSC_TENANT: ${{secrets.FOD_TENANT}}
           SSC_USER: ${{secrets.FOD_USER}}
           SSC_PASSWORD: ${{secrets.FOD_PAT}}
