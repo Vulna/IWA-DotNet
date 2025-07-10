@@ -52,7 +52,7 @@ jobs:
           sast-scan: true
           debricked-sca-scan: true
         env:
-          FOD_URL: https://3.70.235.198:8080/ssc
+          SSC_URL: https://3.70.235.198:8080/ssc
           FOD_TENANT: ${{secrets.FOD_TENANT}}
           FOD_USER: ${{secrets.FOD_USER}}
           FOD_PASSWORD: ${{secrets.FOD_PAT}}
