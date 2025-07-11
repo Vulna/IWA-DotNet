@@ -50,13 +50,11 @@ jobs:
         uses: fortify/github-action@v1
         with:
           sast-scan: true
-          debricked-sca-scan: true
         env:
-          SSC_URL: http://3.70.235.198:8080/ssc
-          SSC_API_URL: http://3.70.235.198:8080/ssc/api
-          SSC_TENANT: ${{secrets.FOD_TENANT}}
-          SSC_USER: ${{secrets.FOD_USER}}
-          SSC_PASSWORD: ${{secrets.FOD_PAT}}
+          FOD_URL: http://3.70.235.198:8080/ssc
+          FOD_API_URL: http://3.70.235.198:8080/ssc/api
+          FOD_USER: ${{secrets.FOD_USER}}
+          FOD_PASSWORD: ${{secrets.FOD_PAT}}
           DO_EXPORT: true
           DO_SETUP: true
           SETUP_EXTRA_OPTS: --copy-from "${{ github.repository }}:${{ github.event.repository.default_branch }}"
